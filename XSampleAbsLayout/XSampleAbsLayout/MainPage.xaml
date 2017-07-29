@@ -4,8 +4,20 @@
              xmlns:local="clr-namespace:XSampleAbsLayout"
              x:Class="XSampleAbsLayout.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <AbsoluteLayout>
+        <!--
+    	<Label Text="Welcome to Xamarin Forms!"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"/>
+        -->
+        <Image x:Name="Image_user"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"/>
+
+        <Image x:Name="Image_frame"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"/>
+    </AbsoluteLayout>
+
 
 </ContentPage>
